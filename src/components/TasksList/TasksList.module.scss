@@ -1,0 +1,87 @@
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.created {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.createdText {
+  color: #4EA8DE;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.createdCount {
+  padding: 2px 8px;
+  text-align: center;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: #333;
+}
+
+.completed {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.completedText {
+  color: #8284FA;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.completedCount {
+  padding: 2px 8px;
+  text-align: center;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: #333;
+}
+
+.tasksList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.noTasksContainer {
+  margin-top: 24px;
+  border-top: 1px solid #333;
+  padding: 64px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 8px;
+
+  p {
+    .bold {
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 700;
+      color: #808080;
+      margin-bottom: 5px;
+    }
+
+    .regular {
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 400;
+      color: #808080;
+    }
+  }
+}

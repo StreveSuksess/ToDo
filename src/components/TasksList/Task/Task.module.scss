@@ -1,0 +1,97 @@
+.task {
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #262626;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  animation: ease-in .3s taskAnimation;
+  transition: all .3s ease-in;
+
+  &.anim {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+}
+
+.button {
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.radio {
+  display: none;
+}
+
+.radio + div {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #4EA8DE;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: all .3s;
+
+  svg {
+    path {
+      transition: all .3s;
+      fill: transparent;
+    }
+  }
+}
+
+.radio:checked + div {
+  border: 1px solid #5E60CE;
+  background-color: #5E60CE;
+
+  svg {
+    path {
+      fill: #f2f2f2;
+    }
+  }
+}
+
+.text {
+  font-size: 14px;
+}
+
+.text.checked {
+  text-decoration: line-through;
+  color: #808080;
+}
+
+.button {
+  svg {
+    transition: all .3s;
+
+    path {
+      transition: all .3s;
+    }
+  }
+}
+
+.button:hover {
+  svg {
+    scale: 1.2;
+
+    path {
+      fill: #f2f2f2;
+    }
+  }
+}
+
+@keyframes taskAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}

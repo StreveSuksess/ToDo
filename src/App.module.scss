@@ -1,0 +1,31 @@
+.intro {
+  background-color: #0D0D0D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+
+  img {
+    transition: all .3s;
+    background: transparent;
+    border-radius: 10px;
+
+    &:hover {
+      transform: scale(1.5);
+      box-shadow: 0 0 20px 20px rgba(#5E60CE, 0.2) inset,
+      0 0 20px 20px rgba(#5E60CE, 0.2);
+      cursor: help;
+    }
+  }
+}
+
+.content {
+  padding: 90px 0;
+  position: relative;
+  margin: 0 auto;
+  max-width: 740px;
+  justify-content: center;
+  @media screen and (max-width: 740px) {
+    padding: 90px 10px;
+  }
+}
