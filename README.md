@@ -1,6 +1,2 @@
 # ToDo
-TypeScript, React, Redux Toolkit, localstorage
-
-#Start
-
-vite
+TypeScript, React, Redux Toolkit,localstorage, vite
